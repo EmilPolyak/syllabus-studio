@@ -8,7 +8,7 @@ This repository contains the **ready-to-deploy build**, not the source code. Upl
 
 ## Try it first
 
-**[syllabus-studio-demo.polyzaar.com](https://syllabus-studio-demo.polyzaar.com/)**
+**[syllabus-studio-demo.polyzaar.com](https://syllabus-studio-demo.polyzaar.com/studio_editor)**
 
 The demo is fully functional for exploring the editor, building a catalog and exporting syllabi. **Publishing instructor tools is disabled** on the demo, because publishing requires the server password and that is not shared. To publish, deploy your own copy — see [Deployment](#deployment).
 
