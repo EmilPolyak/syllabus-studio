@@ -1,0 +1,58 @@
+# Syllabus Studio — Apache config (place in the site root next to index.html).
+
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+
+# ----- Caching -------------------------------------------------------------------------------------
+# index.html and defaults/*.json keep the SAME URL across deploys, so a long max-age on them makes a
+# deploy appear to do nothing: the browser keeps the previous release's index.html, and therefore its
+# already-deleted JS bundle. Files under assets/ are content-hashed and may be cached forever.
+#
+# Two mechanisms, because hosts differ in which module is enabled. Both are guarded, so a host missing
+# one simply skips that block instead of returning 500.
+
+<IfModule mod_headers.c>
+  <Files "index.html">
+    Header always set Cache-Control "no-cache, must-revalidate"
+    Header always unset Expires
+    Header always unset Pragma
+  </Files>
+  <FilesMatch "\.json$">
+    Header always set Cache-Control "no-cache, must-revalidate"
+    Header always unset Expires
+    Header always unset Pragma
+  </FilesMatch>
+  <FilesMatch "\.(js|css|woff2?|ttf|wasm)$">
+    Header always set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/json "access plus 0 seconds"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+</IfModule>
+
+# NOTE FOR SHARED HOSTS (SiteGround and similar): static files are often served by NGINX in front of
+# Apache, which answers them BEFORE .htaccess is consulted — so neither block above can reach them.
+# If `curl -I https://your-domain/index.html` still shows a long max-age after uploading this file,
+# the fix is in the host's own caching settings, not here. See DEPLOYMENT.md §5.
+# The app itself does not depend on this: it appends a changing query string to every defaults/ and
+# configs/ request, so policy and calendar updates arrive even behind a misconfigured cache. Only
+# index.html genuinely needs the host to cooperate.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Deploying into a subdirectory instead of a site root? Uncomment and set this to the same value
+  # used for BASE_PATH at build time, e.g. "/syllabus/". Leave commented for a root deployment.
+  # RewriteBase /syllabus/
+
+  RewriteRule ^api/publish/?$ publish.php [L]
+
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  RewriteRule ^ index.html [L]
+</IfModule>

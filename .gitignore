@@ -1,0 +1,11 @@
+# Published instructor tools and per-director owner hashes are runtime data,
+# created on the server by publish.php. They never belong in the repo.
+configs/
+
+# Revision archive written by /policy-admin on the server.
+dist/defaults/history/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini

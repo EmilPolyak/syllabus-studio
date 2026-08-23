@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1760 1040" style="enable-background:new 0 0 1760 1040;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#11171E;}
+	.st1{fill:#E7EEF5;}
+	.st2{font-family:'Helvetica-Bold';}
+	.st3{font-size:24px;}
+	.st4{fill:#171F28;}
+	.st5{fill:#131A22;}
+	.st6{fill:#1D2833;}
+	.st7{fill:none;stroke:#2C3A48;stroke-width:1.2;}
+	.st8{font-size:13.5px;}
+	.st9{fill:#97A8BA;}
+	.st10{font-family:'Helvetica';}
+	.st11{font-size:11px;}
+	.st12{fill:none;stroke:#97A8BA;stroke-width:1.2;stroke-dasharray:6,5;}
+	.st13{font-size:10.5px;}
+	.st14{fill:#1A222C;stroke:#4D6072;stroke-width:1.2;}
+	.st15{font-size:12px;}
+	.st16{fill:none;stroke:#9DB0C3;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;}
+	.st17{fill:#9DB0C3;}
+	.st18{fill:#2A2017;stroke:#E0954F;stroke-width:1.4;}
+	.st19{fill:#E0954F;}
+	.st20{fill:none;stroke:#9DB0C3;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:7,5;}
+	.st21{fill:#DBE5EE;}
+	.st22{font-size:13px;}
+	.st23{fill:none;stroke:#97A8BA;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;}
+	.st24{fill:#E2685C;}
+	.st25{fill:#4BB583;}
+	.st26{enable-background:new    ;}
+	.st27{font-family:'Arial-Black';}
+	.st28{fill:#171F28;stroke:#2C3A48;stroke-width:1.2;}
+</style>
+<rect class="st0" width="1760" height="1040"/>
+<text transform="matrix(1 0 0 1 24 46)" class="st1 st2 st3">Syllabus Studio — workflow</text>
+<path class="st4" d="M34.78,96c565.42,0.01,1123.84,0.01,1689.26,0c4.48,0.11,6.67,1.63,7.98,2.8c3.32,2.95,3.97,8.18,3.97,8.18V212
+	H24c0-37.48,0-65.97,0-103.45c0-1.49,0.62-6.15,3.08-8.85C29.68,96.85,34.13,96,34.78,96z"/>
+<rect x="24.37" y="211.11" class="st5" width="1712" height="488"/>
+<path class="st4" d="M24,700h1712v219.23c0,0,0.28,3.27-3.18,6.93c-3.47,3.67-8.33,3.84-8.33,3.84H35.29c0,0-4.44,0.43-7.83-3.38
+	c-3.39-3.81-3.46-7.5-3.46-7.5V700z"/>
+<path class="st6" d="M36.33,96c45.22,0,90.44,0,135.67,0c0,278,0,556,0,834H33.71c0,0-4.43-1.23-6.83-4.2S24,919.64,24,918.46
+	c0-273.03,0-538.06,0-811.08c0,0,0.23-4.73,3.87-8.21S36.33,96,36.33,96z"/>
+<line class="st7" x1="24" y1="212" x2="1736" y2="212"/>
+<line class="st7" x1="24" y1="700" x2="1736" y2="700"/>
+<line class="st7" x1="172" y1="96" x2="172" y2="930"/>
+<path class="st7" d="M36,96h1688c6.63,0,12,5.37,12,12v810c0,6.63-5.37,12-12,12H36c-6.63,0-12-5.37-12-12V108
+	C24,101.37,29.37,96,36,96z"/>
+<text transform="matrix(1 0 0 1 40 128)" class="st1 st2 st8">University /</text>
+<text transform="matrix(1 0 0 1 40 146)" class="st1 st2 st8">central policy</text>
+<text transform="matrix(1 0 0 1 40 166)" class="st9 st10 st11">external</text>
+<text transform="matrix(1 0 0 1 40 244)" class="st1 st2 st8">Program director</text>
+<text transform="matrix(1 0 0 1 40 264)" class="st9 st10 st11">Studio Editor</text>
+<text transform="matrix(1 0 0 1 40 732)" class="st1 st2 st8">Faculty</text>
+<text transform="matrix(1 0 0 1 40 752)" class="st9 st10 st11">Published</text>
+<text transform="matrix(1 0 0 1 40 766)" class="st9 st10 st11">instructor tool</text>
+<path class="st12" d="M1076,110h618c6.63,0,12,5.37,12,12v218c0,6.63-5.37,12-12,12h-618c-6.63,0-12-5.37-12-12V122
+	C1064,115.37,1069.37,110,1076,110z"/>
+<text transform="matrix(1 0 0 1 1080 134)" class="st9 st2 st13">ASYNCHRONOUS — AT ANY TIME ONCE A CATALOG EXISTS</text>
+<path class="st14" d="M1094,148h194c4.42,0,8,3.58,8,8v50c0,4.42-3.58,8-8,8h-194c-4.42,0-8-3.58-8-8v-50
+	C1086,151.58,1089.58,148,1094,148z"/>
+<text transform="matrix(1 0 0 1 1115.6338 171)" class="st1 st10 st15">University publishes a policy</text>
+<text transform="matrix(1 0 0 1 1140.9639 188)" class="st1 st10 st15">or calendar update</text>
+<text transform="matrix(1 0 0 1 1151.9019 206)" class="st9 st10 st13">via /policy-admin</text>
+<path class="st16" d="M1191,214v38"/>
+<polygon class="st17" points="1191,252 1188,246 1194,246 "/>
+<path class="st14" d="M1094,252h194c4.42,0,8,3.58,8,8v50c0,4.42-3.58,8-8,8h-194c-4.42,0-8-3.58-8-8v-50
+	C1086,255.58,1089.58,252,1094,252z"/>
+<text transform="matrix(1 0 0 1 1112.6221 273)" class="st1 st10 st15">Studio Editor detects a newer</text>
+<text transform="matrix(1 0 0 1 1129.2949 289)" class="st1 st10 st15">version and notifies the</text>
+<text transform="matrix(1 0 0 1 1146.9844 305)" class="st1 st10 st15">program director</text>
+<path class="st16" d="M1296,285h34"/>
+<polygon class="st17" points="1330,285 1324,282 1324,288 "/>
+<path class="st18" d="M1330,285l72-42l72,42l-72,42L1330,285z"/>
+<text transform="matrix(1 0 0 1 1380.9971 281)" class="st1 st10 st15">Director</text>
+<text transform="matrix(1 0 0 1 1373.9805 297)" class="st1 st10 st15">approves?</text>
+<path class="st16" d="M1474,285h24v-32h36"/>
+<polygon class="st17" points="1534,253 1528,250 1528,256 "/>
+<path class="st16" d="M1474,285h24v32h36"/>
+<polygon class="st17" points="1534,317 1528,314 1528,320 "/>
+<text transform="matrix(1 0 0 1 1502 244)" class="st19 st2 st11">Yes</text>
+<text transform="matrix(1 0 0 1 1502 335)" class="st19 st2 st11">No</text>
+<path class="st14" d="M1542,228h134c4.42,0,8,3.58,8,8v34c0,4.42-3.58,8-8,8h-134c-4.42,0-8-3.58-8-8v-34
+	C1534,231.58,1537.58,228,1542,228z"/>
+<text transform="matrix(1 0 0 1 1569.6455 249)" class="st1 st10 st15">Applied across</text>
+<text transform="matrix(1 0 0 1 1579.6445 265)" class="st1 st10 st15">the catalog</text>
+<path class="st14" d="M1542,292h134c4.42,0,8,3.58,8,8v34c0,4.42-3.58,8-8,8h-134c-4.42,0-8-3.58-8-8v-34
+	C1534,295.58,1537.58,292,1542,292z"/>
+<text transform="matrix(1 0 0 1 1585.6562 313)" class="st1 st10 st15">Deferred</text>
+<text transform="matrix(1 0 0 1 1562.014 329)" class="st9 st10 st13">reviewed again later</text>
+<path class="st20" d="M1684,253h36v133H886"/>
+<path class="st20" d="M886,386h116v49"/>
+<polygon class="st17" points="1002,435 999,429 1005,429 "/>
+<path class="st20" d="M886,386v154h152v31"/>
+<polygon class="st17" points="1038,571 1035,565 1041,565 "/>
+<text transform="matrix(1 0 0 1 971.0691 380.7417)" class="st9 st10 st11">applies to every course — new or already loaded back — regardless of status</text>
+<path class="st20" d="M1685,261h44v529h-21"/>
+<polygon class="st17" points="1708,790 1714,787 1714,793 "/>
+<text transform="matrix(1 0 0 1 1353.3892 380.7416)" class="st9 st10 st11">and reaches already-published tools</text>
+<path class="st21" d="M218,442h42c15.46,0,28,12.54,28,28l0,0c0,15.46-12.54,28-28,28h-42c-15.46,0-28-12.54-28-28l0,0
+	C190,454.54,202.54,442,218,442z"/>
+<text transform="matrix(1 0 0 1 223.6213 476)" class="st0 st2 st8">Start</text>
+<path class="st16" d="M288,470h26"/>
+<polygon class="st17" points="314,470 308,467 308,473 "/>
+<path class="st14" d="M322,435h154c4.42,0,8,3.58,8,8v54c0,4.42-3.58,8-8,8H322c-4.42,0-8-3.58-8-8v-54
+	C314,438.58,317.58,435,322,435z"/>
+<text transform="matrix(1 0 0 1 340.8333 465)" class="st1 st10 st22">Set program identity</text>
+<text transform="matrix(1 0 0 1 344.0801 484)" class="st1 st10 st22">and academic year</text>
+<path class="st16" d="M484,470h26"/>
+<polygon class="st17" points="510,470 504,467 504,473 "/>
+<path class="st14" d="M518,435h154c4.42,0,8,3.58,8,8v54c0,4.42-3.58,8-8,8H518c-4.42,0-8-3.58-8-8v-54
+	C510,438.58,513.58,435,518,435z"/>
+<text transform="matrix(1 0 0 1 540.8132 465)" class="st1 st10 st22">Import inventory or</text>
+<text transform="matrix(1 0 0 1 552.3691 484)" class="st1 st10 st22">create courses</text>
+<path class="st16" d="M680,470h26"/>
+<polygon class="st17" points="706,470 700,467 700,473 "/>
+<path class="st14" d="M714,435h154c4.42,0,8,3.58,8,8v54c0,4.42-3.58,8-8,8H714c-4.42,0-8-3.58-8-8v-54
+	C706,438.58,709.58,435,714,435z"/>
+<g>
+	<path class="st23" d="M726,468v-4c0-2.21,1.79-4,4-4s4,1.79,4,4v4"/>
+	<path class="st23" d="M725,468h10c1.1,0,2,0.9,2,2v7c0,1.1-0.9,2-2,2h-10c-1.1,0-2-0.9-2-2v-7C723,468.9,723.9,468,725,468z"/>
+</g>
+<text transform="matrix(1 0 0 1 764.3628 465)" class="st1 st10 st22">Lock protected</text>
+<text transform="matrix(1 0 0 1 791.8259 484)" class="st1 st10 st22">fields</text>
+<path class="st16" d="M876,470h26"/>
+<polygon class="st17" points="902,470 896,467 896,473 "/>
+<path class="st14" d="M910,435h184c4.42,0,8,3.58,8,8v54c0,4.42-3.58,8-8,8H910c-4.42,0-8-3.58-8-8v-54
+	C902,438.58,905.58,435,910,435z"/>
+<text transform="matrix(1 0 0 1 941.6528 476)" class="st1 st10 st22">Save catalog backup</text>
+<circle class="st24" cx="920" cy="517" r="5.5"/>
+<text transform="matrix(1 0 0 1 934 521)" class="st9 st10 st11">all courses start Incomplete</text>
+<path class="st16" d="M1102,470h21"/>
+<polygon class="st17" points="1123,470 1117,467 1117,473 "/>
+<path class="st18" d="M1123,470l80-52l80,52l-80,52L1123,470z"/>
+<text transform="matrix(1 0 0 1 1181.6814 466)" class="st1 st10 st22">Publish</text>
+<text transform="matrix(1 0 0 1 1182.04 484)" class="st1 st10 st22">scope?</text>
+<path class="st16" d="M1283,470h10v-32h11"/>
+<polygon class="st17" points="1304,438 1298,435 1298,441 "/>
+<path class="st16" d="M1283,470h10v32h11"/>
+<polygon class="st17" points="1304,502 1298,499 1298,505 "/>
+<path class="st14" d="M1312,409h184c4.42,0,8,3.58,8,8v42c0,4.42-3.58,8-8,8h-184c-4.42,0-8-3.58-8-8v-42
+	C1304,412.58,1307.58,409,1312,409z"/>
+<text transform="matrix(1 0 0 1 1341.4883 433)" class="st1 st10 st22">A · Publish everything</text>
+<text transform="matrix(1 0 0 1 1339.5183 451)" class="st9 st10 st13">link carries the program title</text>
+<path class="st14" d="M1312,473h184c4.42,0,8,3.58,8,8v42c0,4.42-3.58,8-8,8h-184c-4.42,0-8-3.58-8-8v-42
+	C1304,476.58,1307.58,473,1312,473z"/>
+<text transform="matrix(1 0 0 1 1341.136 497)" class="st1 st10 st22">B · Publish per faculty</text>
+<text transform="matrix(1 0 0 1 1338.9313 515)" class="st9 st10 st13">link carries the faculty name</text>
+<path class="st16" d="M1504,438h12v32"/>
+<path class="st16" d="M1504,502h12v-32"/>
+<circle class="st17" cx="1516" cy="470" r="3.5"/>
+<path class="st16" d="M1516,470h14"/>
+<polygon class="st17" points="1530,470 1524,467 1524,473 "/>
+<path class="st14" d="M1538,435h162c4.42,0,8,3.58,8,8v54c0,4.42-3.58,8-8,8h-162c-4.42,0-8-3.58-8-8v-54
+	C1530,438.58,1533.58,435,1538,435z"/>
+<g>
+	<path class="st23" d="M1548,463h12c1.1,0,2,0.9,2,2v8c0,1.1-0.9,2-2,2h-12c-1.1,0-2-0.9-2-2v-8C1546,463.9,1546.9,463,1548,463z"/>
+	<path class="st23" d="M1546,464l8,7l8-7"/>
+</g>
+<text transform="matrix(1 0 0 1 1588.7668 465)" class="st1 st10 st22">Email the link(s)</text>
+<text transform="matrix(1 0 0 1 1608.9873 484)" class="st1 st10 st22">to faculty</text>
+<text transform="matrix(1 0 0 1 1579.5571 499)" class="st9 st10 st13">first publish or republish</text>
+<path class="st16" d="M1619,505v250"/>
+<polygon class="st17" points="1619,755 1616,749 1622,749 "/>
+<path class="st14" d="M1538,755h162c4.42,0,8,3.58,8,8v54c0,4.42-3.58,8-8,8h-162c-4.42,0-8-3.58-8-8v-54
+	C1530,758.58,1533.58,755,1538,755z"/>
+<text transform="matrix(1 0 0 1 1563.7214 785)" class="st1 st10 st22">Open the instructor</text>
+<text transform="matrix(1 0 0 1 1596.9609 804)" class="st1 st10 st22">tool link</text>
+<text transform="matrix(1 0 0 1 1545.6307 818)" class="st9 st10 st13">may already show PD&apos;s content</text>
+<path class="st16" d="M1530,790h-26"/>
+<polygon class="st17" points="1504,790 1510,787 1510,793 "/>
+<path class="st14" d="M1338,755h158c4.42,0,8,3.58,8,8v54c0,4.42-3.58,8-8,8h-158c-4.42,0-8-3.58-8-8v-54
+	C1330,758.58,1333.58,755,1338,755z"/>
+<text transform="matrix(1 0 0 1 1376.175 785)" class="st1 st10 st22">Enter syllabus</text>
+<text transform="matrix(1 0 0 1 1384.8459 804)" class="st1 st10 st22">information</text>
+<path class="st16" d="M1330,790h-16"/>
+<polygon class="st17" points="1314,790 1320,787 1320,793 "/>
+<path class="st18" d="M1144,790l85-52l85,52l-85,52L1144,790z"/>
+<text transform="matrix(1 0 0 1 1198.6514 786)" class="st1 st10 st15">All required</text>
+<text transform="matrix(1 0 0 1 1185.6436 804)" class="st1 st10 st15">fields complete?</text>
+<path class="st16" d="M1229,842v36h188v-53"/>
+<polygon class="st17" points="1417,825 1414,831 1420,831 "/>
+<text transform="matrix(1 0 0 1 1243.2231 870)" class="st9 st10 st11">No — required fields still missing</text>
+<path class="st16" d="M1144,790h-56"/>
+<polygon class="st17" points="1088,790 1094,787 1094,793 "/>
+<text transform="matrix(1 0 0 1 1106.5146 780)" class="st19 st2 st11">Yes</text>
+<path class="st14" d="M908,755h172c4.42,0,8,3.58,8,8v54c0,4.42-3.58,8-8,8H908c-4.42,0-8-3.58-8-8v-54
+	C900,758.58,903.58,755,908,755z"/>
+<circle class="st25" cx="924" cy="790" r="6.5"/>
+<text transform="matrix(1 0 0 1 961.5864 785)" class="st1 st10 st22">Status: complete</text>
+<text transform="matrix(1 0 0 1 974.9803 803)" class="st9 st10 st13">ready to export</text>
+<path class="st16" d="M900,790h-26"/>
+<polygon class="st17" points="874,790 880,787 880,793 "/>
+<path class="st14" d="M694,755h172c4.42,0,8,3.58,8,8v54c0,4.42-3.58,8-8,8H694c-4.42,0-8-3.58-8-8v-54
+	C686,758.58,689.58,755,694,755z"/>
+<g>
+	<path class="st23" d="M706,781h9c1.1,0,2,0.9,2,2v14c0,1.1-0.9,2-2,2h-9c-1.1,0-2-0.9-2-2v-14C704,781.9,704.9,781,706,781z"/>
+	<path class="st23" d="M710.5,784v2.5 M710.5,788.5v2.5"/>
+	<path class="st23" d="M709.5,792h2c0.55,0,1,0.45,1,1v2.5c0,0.55-0.45,1-1,1h-2c-0.55,0-1-0.45-1-1V793
+		C708.5,792.45,708.95,792,709.5,792z"/>
+</g>
+<text transform="matrix(1 0 0 1 741.0833 785)" class="st1 st10 st22">Export the syllabus</text>
+<text transform="matrix(1 0 0 1 740.1265 803)" class="st9 st10 st13">PDF + JSON in one ZIP</text>
+<path class="st16" d="M686,790h-26"/>
+<polygon class="st17" points="660,790 666,787 666,793 "/>
+<path class="st14" d="M480,755h172c4.42,0,8,3.58,8,8v54c0,4.42-3.58,8-8,8H480c-4.42,0-8-3.58-8-8v-54
+	C472,758.58,475.58,755,480,755z"/>
+<g>
+	<path class="st23" d="M490,783h12c1.1,0,2,0.9,2,2v8c0,1.1-0.9,2-2,2h-12c-1.1,0-2-0.9-2-2v-8C488,783.9,488.9,783,490,783z"/>
+	<path class="st23" d="M488,784l8,7l8-7"/>
+</g>
+<text transform="matrix(1 0 0 1 527.5657 785)" class="st1 st10 st22">Email the ZIP back</text>
+<text transform="matrix(1 0 0 1 542.2573 804)" class="st1 st10 st22">to the director</text>
+<path class="st16" d="M566,755V649"/>
+<polygon class="st17" points="566,649 563,655 569,655 "/>
+<path class="st14" d="M454,571h224c4.42,0,8,3.58,8,8v62c0,4.42-3.58,8-8,8H454c-4.42,0-8-3.58-8-8v-62
+	C446,574.58,449.58,571,454,571z"/>
+<g>
+	<path class="st23" d="M472,601h9c1.1,0,2,0.9,2,2v14c0,1.1-0.9,2-2,2h-9c-1.1,0-2-0.9-2-2v-14C470,601.9,470.9,601,472,601z"/>
+	<path class="st23" d="M476.5,604v2.5 M476.5,608.5v2.5"/>
+	<path class="st23" d="M475.5,612h2c0.55,0,1,0.45,1,1v2.5c0,0.55-0.45,1-1,1h-2c-0.55,0-1-0.45-1-1V613
+		C474.5,612.45,474.95,612,475.5,612z"/>
+</g>
+<text transform="matrix(1 0 0 1 508.6528 595)" class="st1 st10 st22">Unzip and load the JSON</text>
+<text transform="matrix(1 0 0 1 513.8884 613)" class="st26"><tspan x="0" y="0" class="st9 st10 st13">Data &amp; imports </tspan><tspan x="72.36" y="0" class="st9 st27 st13">→</tspan><tspan x="82.86" y="0" class="st9 st10 st13"> Load saved</tspan></text>
+<text transform="matrix(1 0 0 1 510.2047 628)" class="st9 st10 st13">syllabi · bulk loading supported</text>
+<path class="st16" d="M686,610h26"/>
+<polygon class="st17" points="712,610 706,607 706,613 "/>
+<path class="st14" d="M720,571h194c4.42,0,8,3.58,8,8v62c0,4.42-3.58,8-8,8H720c-4.42,0-8-3.58-8-8v-62
+	C712,574.58,715.58,571,720,571z"/>
+<circle class="st25" cx="742" cy="610" r="6.5"/>
+<text transform="matrix(1 0 0 1 779.1687 595)" class="st1 st10 st22">Status re-validates</text>
+<text transform="matrix(1 0 0 1 799.3987 613)" class="st1 st10 st22">to complete</text>
+<text transform="matrix(1 0 0 1 792.1484 631)" class="st9 st10 st13">if the draft is valid</text>
+<path class="st16" d="M922,610h26"/>
+<polygon class="st17" points="948,610 942,607 942,613 "/>
+<path class="st14" d="M956,571h164c4.42,0,8,3.58,8,8v62c0,4.42-3.58,8-8,8H956c-4.42,0-8-3.58-8-8v-62
+	C948,574.58,951.58,571,956,571z"/>
+<text transform="matrix(1 0 0 1 987.041 605)" class="st1 st10 st22">Save the updated</text>
+<text transform="matrix(1 0 0 1 994.2742 624)" class="st1 st10 st22">catalog backup</text>
+<path class="st16" d="M1080,571v-27h123v-22"/>
+<polygon class="st17" points="1203,522 1200,528 1206,528 "/>
+<text transform="matrix(1 0 0 1 1095.9241 537.8766)" class="st26"><tspan x="0" y="0" class="st9 st10 st11">Republish (optional) </tspan><tspan x="0" y="18" class="st9 st10 st11">merges safely into instructor drafts, field by field</tspan></text>
+<path class="st16" d="M1128,610h26"/>
+<polygon class="st17" points="1154,610 1148,607 1148,613 "/>
+<path class="st14" d="M1162,571h194c4.42,0,8,3.58,8,8v62c0,4.42-3.58,8-8,8h-194c-4.42,0-8-3.58-8-8v-62
+	C1154,574.58,1157.58,571,1162,571z"/>
+<text transform="matrix(1 0 0 1 1188.906 605)" class="st1 st10 st22">Batch export documents</text>
+<text transform="matrix(1 0 0 1 1188.9219 624)" class="st1 st10 st22">for submission or review</text>
+<path class="st16" d="M1364,610h26"/>
+<polygon class="st17" points="1390,610 1384,607 1384,613 "/>
+<path class="st21" d="M1418,582h54c15.46,0,28,12.54,28,28l0,0c0,15.46-12.54,28-28,28h-54c-15.46,0-28-12.54-28-28l0,0
+	C1390,594.54,1402.54,582,1418,582z"/>
+<text transform="matrix(1 0 0 1 1432.2515 616)" class="st0 st2 st8">End</text>
+<path class="st28" d="M34,952h880c5.52,0,10,4.48,10,10v42c0,5.52-4.48,10-10,10H34c-5.52,0-10-4.48-10-10v-42
+	C24,956.48,28.48,952,34,952z"/>
+<circle class="st24" cx="56" cy="986" r="6"/>
+<text transform="matrix(1 0 0 1 72 991)" class="st1 st10 st15">Incomplete</text>
+<circle class="st25" cx="196" cy="986" r="6"/>
+<text transform="matrix(1 0 0 1 212 991)" class="st1 st10 st15">Complete</text>
+<path class="st16" d="M330,986h62"/>
+<polygon class="st17" points="392,986 386,983 386,989 "/>
+<text transform="matrix(1 0 0 1 404 991)" class="st1 st10 st15">Sequential step</text>
+<path class="st20" d="M556,986h62"/>
+<polygon class="st17" points="618,986 612,983 612,989 "/>
+<text transform="matrix(1 0 0 1 630 991)" class="st1 st10 st15">Asynchronous / triggered update</text>
+</svg>

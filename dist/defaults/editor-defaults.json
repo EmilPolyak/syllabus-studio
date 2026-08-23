@@ -1,0 +1,136 @@
+{
+  "academicYear": "2027-2028",
+  "identity": {
+    "universityName": "My University",
+    "collegeName": "My College",
+    "departmentName": "",
+    "programTitle": "",
+    "coursePrefix": "",
+    "logoDataUrl": "/logos/placeholder-logo.svg",
+    "logoFileName": "placeholder-logo.svg",
+    "logoPlacement": "center",
+    "logoSizePercent": 80,
+    "primaryColor": "#003c71",
+    "accentColor": "#c8c8c8"
+  },
+  "technicalSupport": "Contact tech support for concerns with general technical issues not related to the course content.",
+  "fieldDefaults": {
+    "coursePurpose": {
+      "visible": true,
+      "lock": "locked",
+      "required": true,
+      "defaultValue": "",
+      "ghostText": "Describe the purpose of the course, expand on the course description and/or inform the students what role the course plays in the degree program.",
+      "helpText": ""
+    },
+    "courseObjectives": {
+      "visible": true,
+      "lock": "editable",
+      "required": true,
+      "defaultValue": "",
+      "ghostText": "From the instructor's perspective, describe the major concepts, themes, skills, methodologies, or experiences students will encounter in this course. Focus on what the course is designed to teach rather than how student achievement will be measured.\n\"This course is designed to...\"",
+      "helpText": ""
+    },
+    "courseLearningOutcomes": {
+      "visible": true,
+      "lock": "editable",
+      "required": true,
+      "defaultValue": "",
+      "ghostText": "From the student's perspective, write measurable statements that begin with action verbs (e.g., identify, explain, apply, analyze, evaluate, create, design). Focus on what students will be able to demonstrate, produce, perform, or accomplish by the end of the course.\n\"By the end of this course, students will be able to...\"",
+      "helpText": ""
+    },
+    "materialsReadings": {
+      "visible": true,
+      "lock": "editable",
+      "required": true,
+      "defaultValue": "",
+      "ghostText": "List all required and recommended readings, texts, and resources. Enter None if no materials are required.",
+      "helpText": ""
+    },
+    "materialsTechnologies": {
+      "visible": true,
+      "lock": "editable",
+      "required": true,
+      "defaultValue": "",
+      "ghostText": "List required and supplemental technologies or materials. Enter None if none are required.",
+      "helpText": ""
+    },
+    "gradeScale": {
+      "visible": true,
+      "lock": "locked",
+      "required": true,
+      "defaultValue": "<table>\n<tbody>\n<tr><td>A+</td><td>100%+</td><td>Outstanding Work</td></tr>\n<tr><td>A</td><td>95-99%</td><td>Very Superior Work</td></tr>\n<tr><td>A-</td><td>90-94%</td><td>Superior Work</td></tr>\n<tr><td>B+</td><td>88-89%</td><td>Above Good Work</td></tr>\n<tr><td>B</td><td>83-87%</td><td>Good Work</td></tr>\n<tr><td>B-</td><td>80-82%</td><td>Slightly Below Good Work</td></tr>\n<tr><td>C+</td><td>78-79%</td><td>Slightly Above Average Work</td></tr>\n<tr><td>C</td><td>73-77%</td><td>Average Work</td></tr>\n<tr><td>C-</td><td>70-72%</td><td>Slightly Below Average Work</td></tr>\n<tr><td>D+</td><td>68-69%</td><td>Below Average Work</td></tr>\n<tr><td>D</td><td>63-67%</td><td>Below Average Work</td></tr>\n<tr><td>F</td><td>00-62%</td><td>Failure. Work Unacceptable</td></tr>\n</tbody>\n</table>",
+      "ghostText": "",
+      "helpText": ""
+    },
+    "attendancePolicy": {
+      "visible": true,
+      "lock": "editable",
+      "required": false,
+      "defaultValue": "",
+      "ghostText": "State what attendance and participation are expected, how a student reports an absence and what counts as excused, and how absences or lateness affect the grade.",
+      "helpText": ""
+    },
+    "academicPolicies": {
+      "visible": true,
+      "lock": "locked",
+      "required": true,
+      "defaultValue": "",
+      "ghostText": "The content in this section will be updated by the policy admin with the most current information. Until then paste here the policy that you consider the latest.",
+      "helpText": ""
+    },
+    "courseChangePolicy": {
+      "visible": true,
+      "lock": "editable",
+      "required": true,
+      "defaultValue": "The instructor delivering this course reserves the right to tailor the course content, including readings, assignments, and assessment methods, to best suit the needs of the students and the evolving nature of the field. While the course description, title, and course purpose will remain as stated, instructors may modify specific learning activities, materials, and assignment requirements to enhance the learning experience. These modifications will always align with the course's overall objectives and learning outcomes as outlined in this syllabus.",
+      "ghostText": "",
+      "helpText": ""
+    },
+    "technicalSupport": {
+      "visible": true,
+      "lock": "editable",
+      "required": true,
+      "defaultValue": "Contact tech support for concerns with general technical issues not related to the course content.",
+      "ghostText": "Tell students where to get help with general technical issues that are not related to the course content.",
+      "helpText": ""
+    }
+  },
+  "gradingColumns": [
+    {
+      "id": "assignment",
+      "title": "Assignment",
+      "locked": true
+    },
+    {
+      "id": "criteria",
+      "title": "Criteria",
+      "locked": true
+    },
+    {
+      "id": "weight",
+      "title": "Weight (%)",
+      "locked": true
+    },
+    {
+      "id": "exemplary",
+      "title": "Exemplary (90-100%)"
+    },
+    {
+      "id": "proficient",
+      "title": "Proficient (80-89%)"
+    },
+    {
+      "id": "developing",
+      "title": "Developing (70-79%)"
+    },
+    {
+      "id": "insufficient",
+      "title": "Insufficient (Below 70%)"
+    }
+  ],
+  "centralRevisions": {
+    "gradeScale": 1,
+    "academicPolicies": 1
+  }
+}

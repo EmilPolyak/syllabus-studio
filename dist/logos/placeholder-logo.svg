@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" role="img" aria-label="Institution logo placeholder">
+  <rect x="1" y="1" width="318" height="62" rx="8" fill="none" stroke="#8b97a8" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="160" y="33" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#8b97a8">Your institution logo</text>
+  <text x="160" y="50" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" fill="#8b97a8">Program Identity &#8594; Replace logo</text>
+</svg>

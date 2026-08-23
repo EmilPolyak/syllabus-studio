@@ -1,0 +1,233 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "syllabus-studio/syllabus.schema.json",
+  "title": "Syllabus Studio — exported syllabus JSON",
+  "description": "The file produced by 'Save this Syllabus' in an instructor tool, and accepted when loading a syllabus back in. It is self-contained: every locked or derived value has been resolved in, so the file matches the exported PDF exactly. The 'catalog' block is a read-only snapshot and is ignored on load.",
+  "type": "object",
+  "required": ["courseId", "term", "year", "section", "meetings", "assignments", "gradingColumns", "gradingRows", "calendarRows"],
+  "additionalProperties": false,
+  "properties": {
+    "courseId": { "type": "string", "description": "Id of the course in the published catalog this syllabus belongs to." },
+    "term": { "enum": ["Fall", "Winter", "Spring", "Summer", ""], "description": "Winter is used only by quarter-system programs." },
+    "year": { "type": "string", "description": "Calendar year of the term, e.g. \"2027\"." },
+    "section": { "type": "string", "description": "Section number, e.g. \"001\"." },
+
+    "onlineAsync": { "type": "boolean", "description": "Delivered online asynchronously. Alone = fully online; together with meetings = hybrid." },
+    "meetings": {
+      "type": "array",
+      "description": "Recurring class meetings. Empty for a fully online asynchronous section.",
+      "items": {
+        "type": "object",
+        "required": ["day", "startTime", "endTime", "location"],
+        "additionalProperties": false,
+        "properties": {
+          "day": { "enum": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"] },
+          "startTime": { "type": "string", "description": "24-hour \"HH:MM\"." },
+          "endTime": { "type": "string", "description": "24-hour \"HH:MM\"." },
+          "location": { "type": "string" }
+        }
+      }
+    },
+
+    "instructorName": { "type": "string" },
+    "instructorEmail": { "type": "string" },
+    "contactInformation": { "type": "string", "description": "Office hours and how to reach the instructor. Rich text (HTML)." },
+    "teachingAssistants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "email", "contact"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "email": { "type": "string" },
+          "contact": { "type": "string" }
+        }
+      }
+    },
+
+    "coursePurpose": { "type": "string", "description": "Rich text (HTML). Resolved: the instructor's text if the field is editable, the catalog's text if it is locked." },
+    "expectedLearning": {
+      "type": "object",
+      "required": ["objectives", "outcomes"],
+      "additionalProperties": false,
+      "properties": {
+        "objectives": { "type": "string", "description": "Rich text (HTML)." },
+        "outcomes": { "type": "string", "description": "Rich text (HTML)." }
+      }
+    },
+    "materials": {
+      "type": "object",
+      "required": ["readings", "technologies"],
+      "additionalProperties": false,
+      "properties": {
+        "readings": { "type": "string", "description": "Rich text (HTML)." },
+        "technologies": { "type": "string", "description": "Rich text (HTML)." }
+      }
+    },
+    "gradeScale": { "type": "string", "description": "Rich text (HTML), normally a table. Centrally governed; usually locked." },
+    "attendancePolicy": { "type": "string", "description": "Rich text (HTML)." },
+    "academicPolicies": { "type": "string", "description": "Rich text (HTML). Centrally governed; usually locked." },
+    "courseChangePolicy": { "type": "string", "description": "Rich text (HTML)." },
+    "technicalSupport": { "type": "string", "description": "Rich text (HTML)." },
+    "submissionInformation": { "type": "string", "description": "Rich text (HTML). How work is submitted." },
+
+    "assignments": {
+      "type": "array",
+      "description": "Graded work. Each assignment becomes one row of the grading matrix.",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "description", "weight", "criteria", "submission"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "weight": { "type": "number", "description": "Percentage of the final grade. Weights are expected to total 100." },
+          "criteria": { "type": "string" },
+          "submission": { "type": "string" }
+        }
+      }
+    },
+
+    "gradingColumns": {
+      "type": "array",
+      "description": "Columns of the grading matrix. The first three (assignment, criteria, weight) are locked structural columns; the rest are performance bands defined by the program.",
+      "items": {
+        "type": "object",
+        "required": ["id", "title"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "locked": { "type": "boolean", "description": "Structural column the instructor cannot rename or remove." },
+          "sameForAll": { "type": "boolean", "description": "Every assignment row shares one cell value for this column." }
+        }
+      }
+    },
+    "gradingRows": {
+      "type": "array",
+      "description": "One row per assignment, matched by assignmentId.",
+      "items": {
+        "type": "object",
+        "required": ["assignmentId", "cells"],
+        "additionalProperties": false,
+        "properties": {
+          "assignmentId": { "type": "string" },
+          "cells": {
+            "type": "object",
+            "description": "Cell text keyed by grading column id.",
+            "additionalProperties": { "type": "string" }
+          }
+        }
+      }
+    },
+
+    "calendarRows": {
+      "type": "array",
+      "description": "The week-by-week schedule, generated from the program's calendar rules and then edited.",
+      "items": {
+        "type": "object",
+        "required": ["id", "classLabel", "date", "topics", "resources", "assignmentsDue", "flags"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "classLabel": { "type": "string", "description": "e.g. \"Week 1\" or \"Class 3\"." },
+          "date": { "type": "string", "description": "ISO date \"YYYY-MM-DD\"." },
+          "topics": { "type": "string" },
+          "resources": { "type": "string" },
+          "assignmentsDue": { "type": "string" },
+          "flags": {
+            "type": "array",
+            "description": "Events falling on this meeting date.",
+            "items": { "$ref": "#/definitions/calendarEvent" }
+          },
+          "weekNotes": {
+            "type": "array",
+            "description": "Events in this week but not on a meeting day.",
+            "items": { "$ref": "#/definitions/calendarEvent" }
+          }
+        }
+      }
+    },
+
+    "customSections": {
+      "type": "array",
+      "description": "Extra \"Other\" sections, either defined by the program director or added by the instructor.",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "value", "origin"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "description": "Always prefixed \"custom:\" so it can sit in sectionOrder beside built-in ids." },
+          "title": { "type": "string" },
+          "value": { "type": "string", "description": "Rich text (HTML)." },
+          "origin": { "enum": ["editor", "instructor"] }
+        }
+      }
+    },
+    "sectionOrder": {
+      "type": "array",
+      "description": "Print order of the syllabus sections: built-in section ids interleaved with \"custom:*\" ids. Absent means the default order.",
+      "items": { "type": "string" }
+    },
+
+    "catalog": {
+      "type": "object",
+      "description": "READ-ONLY snapshot of catalog-owned data at export time, so the file is a complete record of the PDF. Stripped when the file is loaded back in — the live catalog always wins.",
+      "additionalProperties": true,
+      "properties": {
+        "note": { "type": "string" },
+        "course": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "prefix": { "type": "string" },
+            "number": { "type": "string" },
+            "title": { "type": "string" },
+            "bannerTitle": { "type": "string" },
+            "credits": { "type": "string" },
+            "description": { "type": "string" },
+            "prerequisites": { "type": "string" }
+          }
+        },
+        "program": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "universityName": { "type": "string" },
+            "collegeName": { "type": "string" },
+            "departmentName": { "type": "string" },
+            "programTitle": { "type": "string" },
+            "coursePrefix": { "type": "string" },
+            "primaryColor": { "type": "string" },
+            "accentColor": { "type": "string" },
+            "logoFileName": { "type": "string" }
+          }
+        },
+        "academicYear": { "type": "string", "description": "e.g. \"2027-2028\"." },
+        "calendarSystem": { "enum": ["semester", "quarter"] },
+        "sectionTitles": {
+          "type": "object",
+          "description": "Program overrides for built-in section display titles, keyed by section id.",
+          "additionalProperties": { "type": "string" }
+        }
+      }
+    }
+  },
+
+  "definitions": {
+    "calendarEvent": {
+      "type": "object",
+      "required": ["label", "category", "date"],
+      "additionalProperties": false,
+      "properties": {
+        "label": { "type": "string" },
+        "category": { "enum": ["holiday", "closure", "break", "reading", "exam", "note"] },
+        "date": { "type": "string", "description": "ISO date \"YYYY-MM-DD\"." },
+        "print": { "type": "boolean", "description": "Whether this event is printed in the PDF." }
+      }
+    }
+  }
+}

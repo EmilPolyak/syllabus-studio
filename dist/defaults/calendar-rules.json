@@ -1,0 +1,243 @@
+{
+  "institution": "My University",
+  "rulesVersion": "semester-default-v1",
+  "revision": 1,
+  "system": "semester",
+  "terms": {
+    "Fall": {
+      "instructionWeeks": 15,
+      "examWeeks": 1,
+      "startRule": {
+        "kind": "weekdayOnOrAfter",
+        "month": 8,
+        "day": 23,
+        "weekday": 1
+      },
+      "readingDays": [
+        {
+          "label": "Reading days",
+          "weekOffset": 15,
+          "weekdays": [
+            3,
+            4
+          ],
+          "category": "reading"
+        }
+      ],
+      "examPeriod": {
+        "label": "Exams",
+        "startWeekOffset": 16,
+        "endWeekOffset": 16,
+        "weekdays": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "category": "exam"
+      },
+      "breakPeriods": [
+        {
+          "label": "Fall break",
+          "startWeekOffset": 7,
+          "endWeekOffset": 7,
+          "weekdays": [
+            2,
+            3
+          ],
+          "category": "break"
+        },
+        {
+          "label": "Thanksgiving break",
+          "startWeekOffset": 13,
+          "endWeekOffset": 13,
+          "weekdays": [
+            3,
+            4,
+            5
+          ],
+          "category": "break"
+        }
+      ]
+    },
+    "Spring": {
+      "instructionWeeks": 15,
+      "examWeeks": 1,
+      "startRule": {
+        "kind": "weekdayOnOrAfter",
+        "month": 1,
+        "day": 5,
+        "weekday": 1
+      },
+      "readingDays": [
+        {
+          "label": "Reading days",
+          "weekOffset": 15,
+          "weekdays": [
+            2,
+            3
+          ],
+          "category": "reading"
+        }
+      ],
+      "examPeriod": {
+        "label": "Exams",
+        "startWeekOffset": 15,
+        "endWeekOffset": 16,
+        "weekdays": [
+          4,
+          5,
+          1,
+          2,
+          3
+        ],
+        "category": "exam"
+      },
+      "breakPeriods": [
+        {
+          "label": "Spring break",
+          "startWeekOffset": 10,
+          "endWeekOffset": 10,
+          "weekdays": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "category": "break"
+        }
+      ]
+    },
+    "Summer": {
+      "instructionWeeks": 12,
+      "examWeeks": 1,
+      "startRule": {
+        "kind": "weekdayOnOrAfter",
+        "month": 6,
+        "day": 15,
+        "weekday": 1
+      },
+      "examPeriod": {
+        "label": "Exams",
+        "startWeekOffset": 12,
+        "endWeekOffset": 12,
+        "weekdays": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "category": "exam"
+      }
+    }
+  },
+  "holidays": [
+    {
+      "label": "Martin Luther King, Jr. Day",
+      "category": "holiday",
+      "terms": [
+        "Spring"
+      ],
+      "dateRule": {
+        "kind": "nthWeekdayOfMonth",
+        "month": 1,
+        "weekday": 1,
+        "nth": 3
+      }
+    },
+    {
+      "label": "Memorial Day",
+      "category": "holiday",
+      "terms": [
+        "Summer"
+      ],
+      "dateRule": {
+        "kind": "nthWeekdayOfMonth",
+        "month": 5,
+        "weekday": 1,
+        "nth": -1
+      }
+    },
+    {
+      "label": "Juneteenth",
+      "category": "holiday",
+      "terms": [
+        "Summer"
+      ],
+      "dateRule": {
+        "kind": "weekdayOnOrAfter",
+        "month": 6,
+        "day": 19,
+        "weekday": 5
+      }
+    },
+    {
+      "label": "Independence Day",
+      "category": "holiday",
+      "terms": [
+        "Summer"
+      ],
+      "dateRule": {
+        "kind": "weekdayOnOrAfter",
+        "month": 7,
+        "day": 4,
+        "weekday": 5
+      }
+    },
+    {
+      "label": "Labor Day",
+      "category": "holiday",
+      "terms": [
+        "Fall"
+      ],
+      "dateRule": {
+        "kind": "nthWeekdayOfMonth",
+        "month": 9,
+        "weekday": 1,
+        "nth": 1
+      }
+    },
+    {
+      "label": "Indigenous Peoples' Day",
+      "category": "holiday",
+      "terms": [
+        "Fall"
+      ],
+      "dateRule": {
+        "kind": "nthWeekdayOfMonth",
+        "month": 10,
+        "weekday": 1,
+        "nth": 2
+      }
+    },
+    {
+      "label": "Election Day",
+      "category": "closure",
+      "terms": [
+        "Fall"
+      ],
+      "dateRule": {
+        "kind": "weekdayOnOrAfter",
+        "month": 11,
+        "day": 2,
+        "weekday": 2
+      }
+    },
+    {
+      "label": "Thanksgiving Day",
+      "category": "holiday",
+      "terms": [
+        "Fall"
+      ],
+      "dateRule": {
+        "kind": "nthWeekdayOfMonth",
+        "month": 11,
+        "weekday": 4,
+        "nth": 4
+      }
+    }
+  ]
+}

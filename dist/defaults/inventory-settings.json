@@ -1,0 +1,16 @@
+{
+  "version": "by-sheet-v1",
+  "layout": "sheet",
+  "startIndex": 2,
+  "endIndex": 0,
+  "prefixNumberCombined": true,
+  "defaultPrefix": "",
+  "fields": {
+    "title": { "row": 4, "col": 3 },
+    "prefix": { "row": 3, "col": 3 },
+    "number": { "row": 3, "col": 3 },
+    "credits": { "row": 38, "col": 3 },
+    "prerequisites": { "row": 40, "col": 3 },
+    "description": { "row": 48, "col": 3 }
+  }
+}
