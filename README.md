@@ -28,7 +28,7 @@ The demo is fully functional for exploring the editor, building a catalog and ex
 
 Everything in Syllabus Studio follows from a single split: the program owns the boilerplate, the instructor owns the term.
 
-### Program director — the Editor (`/editor`)
+### Program director — the Editor (`/studio_editor`)
 
 Sets up **program identity** (university, college, department, program title, logo, brand colours), builds the **course catalog**, and marks every syllabus field **locked** or **editable**. Then publishes one **instructor tool** per instructor or per program, protected by a personal password. The director never fills in term-specific content.
 
@@ -38,7 +38,7 @@ Opens the link the director sent. Sees only their assigned courses and only the 
 
 Locked fields are pre-filled from the catalog and cannot be edited; editable fields are pre-seeded and can be overwritten. When the director republishes after updating the catalog, locked fields are refreshed and the instructor's own work is preserved.
 
-### Policy administrator — `/policy-admin`
+### Policy administrator — `/policy_admin`
 
 Optional third screen, behind its own separate password. The office that governs policy centrally publishes the **grade scale**, the **academic policies** text and the **academic calendar rules** to every program on the server at once. Holding the publish password grants nothing here, and vice versa.
 
@@ -81,7 +81,7 @@ Open `publish.php` and replace both placeholders, or better, set them as environ
 
 They must be different, and both should be long and random. Holding one grants nothing about the other.
 
-For `/policy-admin` to save, `defaults/` must also be writable; it creates a `defaults/history/` folder for the revision archive. If `defaults/` stays read-only the screen still loads and shows what is live, but publishing fails with a clear message.
+For `/policy_admin` to save, `defaults/` must also be writable; it creates a `defaults/history/` folder for the revision archive. If `defaults/` stays read-only the screen still loads and shows what is live, but publishing fails with a clear message.
 
 ### 3. Replace the shipped defaults with your own
 
@@ -126,7 +126,7 @@ In a **new incognito session** (close all incognito windows first — they share
 |---|---|
 | `/` | a public notice pointing visitors at their program director |
 | `/editor` | the program director's editor |
-| `/policy-admin` | central policy and calendar administration |
+| `/policy_admin` | central policy and calendar administration |
 | `/<program-slug>` | an instructor tool |
 | `/?tool=<program-slug>` | the same, for hosts without URL rewriting |
 
