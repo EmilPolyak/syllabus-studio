@@ -1,0 +1,24 @@
+# Syllabus Studio — configs/ guard.
+#
+# This folder holds the published instructor tools. For each one there are two files:
+#
+#   <slug>.json    the published catalog. MUST stay publicly readable — this is what
+#                  an instructor tool fetches when the instructor opens their link.
+#   <slug>.owner   the bcrypt hash of the program director's personal password, used
+#                  server-side to decide who may overwrite or unpublish that slug.
+#                  This must never be served.
+#
+# publish.php recreates this file if it goes missing, but shipping it means the guard
+# is in place from the moment you deploy — before the first publish, not after it.
+
+<FilesMatch "\.owner$">
+  <IfModule mod_authz_core.c>
+    # Apache 2.4+
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    # Apache 2.2 and older
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>

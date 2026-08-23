@@ -1,0 +1,36 @@
+# Syllabus Studio — logos/ guard. Keep this folder inert: it holds images, nothing else.
+#
+# Logo uploads through publish.php require no password. They are validated as real
+# images by inspecting the bytes, and the filename is reduced to a safe basename with
+# the extension taken from those bytes — so a script should never land here. This file
+# is the second layer: even if one did, it is not executed.
+#
+# publish.php recreates this file if it goes missing, but shipping it means the guard
+# is in place from the moment you deploy — before the first logo upload, not after it.
+
+# Primary guard. Nothing executable belongs in this folder, so refuse it outright.
+# This holds whichever way the host wires PHP up — mod_php, FPM or CGI.
+<FilesMatch "\.(php|phtml|phar|phps|php[0-9]|cgi|pl|py|sh|inc)$">
+  <IfModule mod_authz_core.c>
+    # Apache 2.4+
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    # Apache 2.2 and older
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+# Defense in depth: drop any handler that would execute these, and type them as plain
+# text. Wrapped in IfModule so a host without mod_mime skips the block instead of 500ing.
+<IfModule mod_mime.c>
+  RemoveHandler .php .phtml .phar .cgi .pl .py
+  AddType text/plain .php .phtml .phar
+</IfModule>
+
+# Belt and braces on mod_php hosts. "php_flag" is an UNKNOWN directive under PHP-FPM or
+# CGI and would return 500 there, so it must stay inside this guard.
+<IfModule mod_php.c>
+  php_flag engine off
+</IfModule>

@@ -60,13 +60,23 @@ Into the **site root**:
 
 | From this repo | Goes to |
 |---|---|
-| everything **inside** `dist/` — `index.html`, `assets/`, `defaults/`, `logos/` | site root |
+| everything **inside** `dist/` — `index.html`, `assets/`, `defaults/`, `logos/`, `configs/` | site root |
 | `server/.htaccess` | site root |
 | `server/publish.php` | site root |
 
-Then create an empty, **writable** `configs/` folder in the same root (`755` or `775`). Published instructor tools are written there.
+Then make `configs/` **writable** (`755` or `775`). Published instructor tools are written there. It ships empty apart from its guard, so there is no folder to create by hand — just check the permission.
 
-`.htaccess` is not optional — it carries both the URL rewriting and the cache rules.
+The root `.htaccess` is not optional — it carries both the URL rewriting and the cache rules.
+
+**Three `.htaccess` files, and they are not interchangeable.** Upload each to its own folder:
+
+| File | Protects |
+|---|---|
+| root `.htaccess` (from `server/`) | URL rewriting and cache headers |
+| `configs/.htaccess` | stops the `<slug>.owner` password hashes from being served, while leaving the `<slug>.json` tools publicly readable — instructor tools need to fetch those |
+| `logos/.htaccess` | keeps the upload folder inert, so nothing there is ever executed |
+
+`publish.php` recreates the last two if they go missing, but only when it next runs — `configs/.htaccess` on the first publish, `logos/.htaccess` on the first logo upload. Shipping them means the guards are live from the moment you deploy rather than from first use. Some FTP clients hide dotfiles; if yours does, switch on "show hidden files" before uploading, then confirm all three arrived.
 
 **Permissions:** directories `755`, files `644`. Do not apply `755` recursively; the execute bit means nothing on a JSON file. What actually decides whether publishing works is ownership: where PHP runs as your own account, `644` files you own are already writable. If PHP runs as `www-data` or similar, use `664` on files and `775` on `defaults/`.
 
@@ -77,7 +87,7 @@ Open `publish.php` and replace both placeholders, or better, set them as environ
 | Token | Who holds it | Grants |
 |---|---|---|
 | `PUBLISH_TOKEN` | every program director | publishing and unpublishing instructor tools |
-| `POLICY_TOKEN` | the office governing policy centrally | `/policy-admin` — grade scale, academic policies, calendar rules |
+| `POLICY_TOKEN` | the office governing policy centrally | `/policy_admin` — grade scale, academic policies, calendar rules |
 
 They must be different, and both should be long and random. Holding one grants nothing about the other.
 
@@ -115,22 +125,33 @@ You want `no-cache, must-revalidate`. If you still see a long `max-age`, the hos
 In a **new incognito session** (close all incognito windows first — they share one cache):
 
 1. `https://your-domain/` shows the "contact your program director" notice.
-2. `https://your-domain/editor` opens the editor.
+2. `https://your-domain/studio_editor` opens the editor.
 3. `https://your-domain/defaults/editor-defaults.json` returns **your** JSON, with `Cache-Control: no-cache`.
 4. Program Identity in the editor shows your institution's values.
-5. Publish a test program, open the instructor link, confirm the course list loads.
+5. `https://your-domain/logos/placeholder-logo.svg` returns the image, **not a 500**. A 500 here means your host does not permit one of the directives in `logos/.htaccess` — see the note below.
+6. Publish a test program, open the instructor link, confirm the course list loads.
+7. `https://your-domain/configs/<your-test-slug>.owner` returns **403 or 404**, never the file. This is the one check worth not skipping: that file is the password hash.
+
+> **If step 5 returns 500**, your host restricts `AllowOverride` and is rejecting a directive rather than ignoring it. Comment out the `RemoveHandler`/`AddType` block in `logos/.htaccess` first, and the `<FilesMatch>` block only if that was not enough. The upload path is still validated in `publish.php` either way — the file is defense in depth, not the only defense.
 
 ### URLs once deployed
 
 | URL | What loads |
 |---|---|
 | `/` | a public notice pointing visitors at their program director |
-| `/editor` | the program director's editor |
+| `/studio_editor` | the program director's editor |
 | `/policy_admin` | central policy and calendar administration |
 | `/<program-slug>` | an instructor tool |
 | `/?tool=<program-slug>` | the same, for hosts without URL rewriting |
 
-The bare root deliberately does not open the editor. That is obscurity, not access control — if you need `/editor` genuinely restricted, add HTTP auth for it in `.htaccess`.
+The bare root deliberately does not open the editor. That is obscurity, not access control.
+
+**Both admin screens answer on more than one path**, so that older bookmarks keep working:
+
+- editor — `/studio_editor`, `/studio_editor.html`, `/editor`
+- policy admin — `/policy_admin`, `/policy_admin.html`, `/policy-admin`
+
+If you want either screen genuinely restricted, add HTTP auth in `.htaccess` — and cover **every** alias. Protecting `/studio_editor` alone leaves `/editor` wide open.
 
 ---
 

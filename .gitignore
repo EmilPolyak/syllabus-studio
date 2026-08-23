@@ -1,8 +1,10 @@
-# Published instructor tools and per-director owner hashes are runtime data,
-# created on the server by publish.php. They never belong in the repo.
-configs/
+# Runtime data written by publish.php on the server: the published instructor tools
+# (<slug>.json) and the bcrypt owner hashes (<slug>.owner). The folder itself and its
+# .htaccess guard ARE tracked, so a deploy ships with the guard already in place.
+dist/configs/*
+!dist/configs/.htaccess
 
-# Revision archive written by /policy-admin on the server.
+# Revision archive written by /policy_admin on the server.
 dist/defaults/history/
 
 # OS cruft

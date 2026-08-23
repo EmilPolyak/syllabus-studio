@@ -32,7 +32,21 @@ function ensure_configs_dir($dir) {
   if (!is_dir($dir) && !mkdir($dir, 0775, true)) return false;
   $ht = "$dir/.htaccess";
   if (!is_file($ht)) {
-    @file_put_contents($ht, "<FilesMatch \"\\.owner$\">\n  Require all denied\n</FilesMatch>\n");
+    // Mirrors dist/configs/.htaccess. Guarded so an Apache without mod_authz_core skips the
+    // block instead of failing on an unknown directive.
+    @file_put_contents($ht, <<<'HTACCESS'
+<FilesMatch "\.owner$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+HTACCESS
+    );
   }
   return true;
 }
@@ -74,7 +88,31 @@ function ensure_logos_dir($logosDir) {
   if (!is_dir($logosDir) && !mkdir($logosDir, 0775, true)) return false;
   $ht = "$logosDir/.htaccess";
   if (!is_file($ht)) {
-    @file_put_contents($ht, "php_flag engine off\nRemoveHandler .php .phtml .phar .cgi .pl .py\nAddType text/plain .php .phtml .phar\n");
+    // Mirrors dist/logos/.htaccess. php_flag MUST stay inside <IfModule mod_php.c>: it is an
+    // UNKNOWN directive under PHP-FPM or CGI, and an unguarded copy makes every request Apache
+    // handles in this folder return 500 rather than simply being ignored.
+    @file_put_contents($ht, <<<'HTACCESS'
+<FilesMatch "\.(php|phtml|phar|phps|php[0-9]|cgi|pl|py|sh|inc)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+<IfModule mod_mime.c>
+  RemoveHandler .php .phtml .phar .cgi .pl .py
+  AddType text/plain .php .phtml .phar
+</IfModule>
+
+<IfModule mod_php.c>
+  php_flag engine off
+</IfModule>
+
+HTACCESS
+    );
   }
   return true;
 }
