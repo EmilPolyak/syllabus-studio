@@ -24,7 +24,7 @@ authors:
     orcid: "https://orcid.org/0000-0002-8699-4354"
     # email: "you@drexel.edu"   # <- optional; becomes public if added
 version: "2.02"
-date-released: "2026-08-23"
+date-released: "2026-08-24"
 license: CC-BY-NC-4.0
 repository-code: "https://github.com/EmilPolyak/syllabus-studio"
 url: "https://syllabus-studio-demo.polyzaar.com/studio_editor"
