@@ -1,0 +1,73 @@
+cff-version: 1.2.0
+message: "If you use Syllabus Studio, please cite it using the metadata in this file."
+title: "Syllabus Studio"
+abstract: >-
+  Syllabus Studio is a browser-based platform for developing academic syllabi
+  consistently across a program while preserving instructor control over
+  course-specific content. A program director maintains one course catalog,
+  designates each syllabus field as locked or instructor-editable, and publishes
+  a link-based tool to each instructor; the instructor supplies term-specific
+  content and exports a finished syllabus as PDF, Microsoft Word, or
+  inline-styled HTML for a learning management system. Institutional content is
+  resolved from the catalog at render time, so policy revisions propagate to
+  completed syllabi without displacing instructor-authored work. Course
+  calendars are generated from institutional term rules for semester or quarter
+  systems and support in-person, hybrid, and online asynchronous delivery. All
+  authoring and document generation occur in the browser; instructor drafts
+  remain on the user's device. The platform requires no user accounts, no
+  database, and no cloud-hosted data, and deploys to ordinary web hosting.
+type: software
+authors:
+  - family-names: "Polyak"
+    given-names: "Emil"
+    affiliation: "Drexel University"
+    orcid: "https://orcid.org/0000-0002-8699-4354"
+    # email: "you@drexel.edu"   # <- optional; becomes public if added
+version: "2.02"
+date-released: "2026-08-23"
+license: CC-BY-NC-4.0
+repository-code: "https://github.com/EmilPolyak/syllabus-studio"
+url: "https://syllabus-studio-demo.polyzaar.com/studio_editor"
+keywords:
+  - syllabus development
+  - curriculum management
+  - document automation
+  - higher education
+  - educational technology
+  - academic administration
+  - local-first software
+
+# ---------------------------------------------------------------------------
+# AFTER the first Zenodo release, add the CONCEPT DOI here (the one that always
+# resolves to the newest version), then commit:
+#
+# identifiers:
+#   - type: doi
+#     value: "10.5281/zenodo.XXXXXXX"
+#     description: "Concept DOI for all versions of Syllabus Studio"
+# ---------------------------------------------------------------------------
+
+# ---------------------------------------------------------------------------
+# ONCE the ICERI 2026 paper is published, uncomment this block so that citing
+# the software points readers at the paper instead. Fill in the page numbers,
+# the DOI and the exact conference dates from the published proceedings.
+#
+# preferred-citation:
+#   type: conference-paper
+#   title: "Syllabus Studio: A practice-informed, role-based web platform for standardizing academic syllabus development"
+#   authors:
+#     - family-names: "Polyak"
+#       given-names: "Emil"
+#       affiliation: "Drexel University"
+#   collection-title: "ICERI2026 Proceedings"
+#   conference:
+#     name: "19th annual International Conference of Education, Research and Innovation"
+#   publisher:
+#     name: "IATED Academy"
+#   year: 2026
+#   isbn: ""
+#   issn: "2340-1095"
+#   start: 0
+#   end: 0
+#   doi: ""
+# ---------------------------------------------------------------------------
