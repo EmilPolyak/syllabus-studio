@@ -149,7 +149,7 @@ The bare root deliberately does not open the editor. That is obscurity, not acce
 **Both admin screens answer on more than one path**, so that older bookmarks keep working:
 
 - editor — `/studio_editor`, `/studio_editor.html`, `/editor`
-- policy admin — `/policy_admin`, `/policy_admin.html`, `/policy_admin`
+- policy admin — `/policy_admin`, `/policy_admin.html`, `/policy-admin`
 
 If you want either screen genuinely restricted, add HTTP auth in `.htaccess` — and cover **every** alias. Protecting `/studio_editor` alone leaves `/editor` wide open.
 
