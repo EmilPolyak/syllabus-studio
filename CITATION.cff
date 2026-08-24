@@ -37,15 +37,13 @@ keywords:
   - academic administration
   - local-first software
 
-# ---------------------------------------------------------------------------
-# AFTER the first Zenodo release, add the CONCEPT DOI here (the one that always
-# resolves to the newest version), then commit:
-#
-# identifiers:
-#   - type: doi
-#     value: "10.5281/zenodo.XXXXXXX"
-#     description: "Concept DOI for all versions of Syllabus Studio"
-# ---------------------------------------------------------------------------
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22075159"
+    description: "Concept DOI — always resolves to the newest version of Syllabus Studio"
+  - type: doi
+    value: "10.5281/zenodo.22075160"
+    description: "Version DOI for Syllabus Studio v2.02"
 
 # ---------------------------------------------------------------------------
 # ONCE the ICERI 2026 paper is published, uncomment this block so that citing

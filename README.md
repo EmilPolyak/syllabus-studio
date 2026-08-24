@@ -1,5 +1,8 @@
 # Syllabus Studio
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22075159.svg)](https://doi.org/10.5281/zenodo.22075159)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 Syllabus Studio is a browser-based tool for keeping every syllabus in an academic program consistent and professionally formatted. A **program director** builds one course catalog, decides which parts of a syllabus instructors may change, and publishes a private link to each instructor; the **instructor** fills in only their own term, schedule and content, then exports a finished syllabus as PDF, Word or LMS-ready HTML — with nothing to install and no accounts to create.
 
 This repository contains the **ready-to-deploy build**, not the source code. Upload it to any Apache + PHP host and it runs.
@@ -259,3 +262,15 @@ Notes on the shape:
 Free to use, share, deploy and adapt for **non-commercial** purposes — including by universities, colleges and other educational institutions — provided you give appropriate credit to **Emil Polyak** and indicate whether changes were made. Commercial use requires separate permission.
 
 See [LICENSE](LICENSE) for the full terms.
+
+---
+
+## Citing
+
+Syllabus Studio is archived on Zenodo. Cite it as:
+
+> Polyak, E. (2026). *Syllabus Studio* (Version 2.02) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.22075159
+
+The DOI above is the **concept DOI** — it always resolves to the newest version. To cite this exact release instead, use [10.5281/zenodo.22075160](https://doi.org/10.5281/zenodo.22075160).
+
+Machine-readable metadata is in [CITATION.cff](CITATION.cff); GitHub's **Cite this repository** button renders BibTeX and APA from it.
