@@ -23,7 +23,6 @@ The demo is fully functional for exploring the editor, building a catalog and ex
   <img src="docs/program-director-workflow-dark.svg" alt="Swimlane diagram of the Syllabus Studio workflow. Three lanes: the university and its central policy office; the program director working in the Studio editor; and faculty working in a published instructor tool. The director sets up program identity and a course catalog, then publishes instructor tools. Republishing loops back and merges into whatever an instructor has already entered. Faculty complete and return syllabi, which the director loads back into the catalog." width="100%">
 </a>
 
-<p align="center"><em><a href="https://raw.githubusercontent.com/EmilPolyak/syllabus-studio/main/docs/program-director-workflow-dark.svg">Click the diagram to open it full size →</a></em></p>
 
 ---
 
